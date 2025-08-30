@@ -257,6 +257,17 @@ ul{
         color: #000000;
         padding: 20px;
 
+        & img{
+            position: relative;
+            width: 300px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2%;
+            margin-bottom: 10px;
+        };
+
         & div{
             width: 85%;
             display: flex;
