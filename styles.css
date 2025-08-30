@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: #daad81;
+    color: #000000;
+}
+    
+header {
+    width: 100%;
+    height: 55px;
+    background-color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+h2 {
+    width: 90%;
+    height: auto;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px;
+    text-shadow: 1px 1px 1px #363535;
+}
+    
+#header-logo {
+    width: 400px;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    font-weight: bold;
+    color: #e9e6e3;
+    margin-left: 20px;
+
+    & img{
+        width: 40px;
+        height: 100%;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) { /* tablets e celulares s/ scrollbar*/
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) { /* celulares */
+    #entrada {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 1px 1px 2px #000000;
+        flex-direction: column;
+        color: #FFF;
+        position: relative;
+
+        & ::before {
+            content: "";
+            position: absolute;
+            background-image: url("/assets/background1.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: brightness(0.7);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        & h1 {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        & p {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2rem;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    }
+
+    #missao {
+        width: 100%;
+        height: auto;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: #000000;
+        padding: 20px;
+        
+        & div{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        & #texto-missao {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & p {
+            width: 80%;
+            height: auto;
+            text-align: left;
+            font-size: 1.2rem;
+            padding: 10px;
+            padding-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    }
+
+    #pergunta1{
+        width: 100%;
+        height: auto;
+        background-color: #f0e1d2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: #ffffff;
+        padding: 20px;
+        background-image: url("/assets/background2.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        & img{
+            position: relative;
+            width: 400px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2%;
+            margin-bottom: 10px;
+        }
+
+        & div{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & p {
+            width: 85%;
+            height: auto;
+            text-align: left;
+            font-size: 1.2rem;
+            padding: 10px;
+            padding-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    }
+
+    #pergunta2{
+        width: 100%;
+        height: auto;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: black;
+        padding: 20px;
+
+        & div{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        & p {
+            width: 85%;
+            height: auto;
+            text-align: left;
+            font-size: 1.2rem;
+            padding: 10px;
+            padding-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        & .txtNeg{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    }
+
+    #imagem2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-image: url("/assets/background3.jpeg");
+
+        & img{
+            position: relative;
+            width: 400px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2%;
+        }
+    }
+
+    .exemples{
+        width: 100%;
+        height: auto;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: #000000;
+        padding: 20px;
+
+        & div{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        & ul{
+            width: 80%;
+            flex-direction: column;
+            text-align: left;
+            margin-left: 70px;
+            line-height: 1.7rem;
+        }
+    }
+
+    #combate{
+        width: 100%;
+        height: auto;
+        background-color: #faf2ea;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: #000000;
+        padding: 20px;
+
+        & div{
+            width: 85%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & #texto-combate {
+            width: 85%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        & p {
+            width: 85%;
+            height: auto;
+            text-align: left;
+            font-size: 1.2rem;
+            padding: 10px;
+            padding-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 600;
+        }
+
+        & ul{
+            width: 80%;
+            flex-direction: column;
+            text-align: left;
+            margin-left: 70px;
+            line-height: 1.7rem;
+        }
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: #000000;
+        color: #e9e6e3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        flex-direction: row;
+        line-height: 1.2rem;
+
+        & div{
+            width: 60%;
+        }
+
+        & img {
+            position: relative;
+            width: 90px;
+            height: auto;
+        }
+    }
+}
