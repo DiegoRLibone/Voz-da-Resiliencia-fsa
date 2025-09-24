@@ -199,7 +199,7 @@ li{
     #pergunta2{
         width: 100%;
         height: auto;
-        background-color: antiquewhite;
+        background-color: rgb(179, 176, 176);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -242,7 +242,7 @@ li{
     .exemples{
         width: 100%;
         height: auto;
-        background-color: antiquewhite;
+        background-color: rgb(179, 176, 176);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -262,12 +262,15 @@ li{
     #combate{
         width: 100%;
         height: auto;
-        background-color: #faf2ea;
+        background-image: url("/assets/background2.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        color: #000000;
+        color: #fff;
         padding: 20px;
 
         & img{
@@ -279,7 +282,7 @@ li{
             justify-content: center;
             border-radius: 2%;
             margin-bottom: 10px;
-        };
+        }
 
         & div{
             width: 85%;
@@ -299,7 +302,7 @@ li{
 
         & a{
             text-decoration: none;
-            color: #122847;
+            color: #fc1a1a;
             text-decoration: underline;
         }
         
@@ -315,7 +318,7 @@ li{
     #Protesto{
         width: 100%;
         height: auto;
-        background-color: #faf2ea;
+        background-color: rgb(179, 176, 176);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -352,10 +355,10 @@ li{
     }
 
     #botao{
-        width: 90%;
+        width: 100%;
         height: auto;
         font-size: 1.2rem;
-        background-color: #122847;
+        background-color: #451247;
         text-decoration: none;
         color: #ffffff;
         border-radius: 5px;
@@ -369,12 +372,15 @@ li{
     #fsa {
         width: 100%;
         height: auto;
-        background-color: #faf2ea;
+        background-image: url("/assets/background2.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        color: #000000;
+        color: #fff;
         padding: 20px;
 
         & div{
@@ -383,9 +389,9 @@ li{
             align-items: center;
             flex-direction: column;
             
-            & img{
-                width: 90%;
-                padding: 40px;
+        & img{
+            width: 90%;
+            padding: 40px;
         }
 
         & h1{
