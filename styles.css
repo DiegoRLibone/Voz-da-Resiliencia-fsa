@@ -163,7 +163,7 @@ li{
         height: auto;
         background-color: #6f239b;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
         align-items: center;
         color: #ffffff;
@@ -194,6 +194,7 @@ li{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        flex-direction: column;
     }
 
     #pergunta2{
